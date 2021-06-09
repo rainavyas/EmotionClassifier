@@ -33,7 +33,7 @@ def read_file(filepath, CLASS_TO_IND):
             class_labels.append(label)
             tweets.append(items[0])
         except:
-            raise print("Failed to convert class", items[1])
+            print("Failed to convert class", items[1])
     return tweets, class_labels
 
 
