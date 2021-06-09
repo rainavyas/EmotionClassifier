@@ -35,5 +35,5 @@ RoBERTta (base) encoder + classification head | - |
 
 - Initialise encoder with _model_
 - Batch Size = 8
-- Epochs = TODO
-- Learning Rate = TODO
+- Epochs = 2
+- Learning Rate = 1e-5
