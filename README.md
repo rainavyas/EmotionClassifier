@@ -1,6 +1,6 @@
 # Objective
 
-NLP classification of twitter tweets into one of eight emotions: anger, anticipation, disgust, fear, joy, sadness, surprise, and trust.
+NLP classification of twitter tweets into one of six emotions: love, joy, fear, anger, surprise, sadness.
 The dataset is described in https://www.kaggle.com/praveengovi/emotions-dataset-for-nlp?select=train.txt
 
 
