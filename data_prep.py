@@ -21,6 +21,7 @@ _DOWNLOAD_URL = "https://www.kaggle.com/praveengovi/emotions-dataset-for-nlp?sel
 def read_file(filepath, CLASS_TO_IND):
     tweets = []
     class_labels = []
+    emotions = []
 
     with open(filepath, 'r') as f:
         lines = f.readlines()
@@ -32,8 +33,11 @@ def read_file(filepath, CLASS_TO_IND):
             label = CLASS_TO_IND[items[1]]
             class_labels.append(label)
             tweets.append(items[0])
+            emotions.append(items[1])
         except:
             print("Failed to convert class", items[1])
+            emotions.append(items[1])
+    print("Emotions", list(set(emotions)))
     return tweets, class_labels
 
 
@@ -50,7 +54,8 @@ def get_data(filepath, arch):
         'joy': 4,
         'sadness': 5,
         'surprise': 6,
-        'trust': 7
+        'trust': 7,
+        'love': 8
     }
 
     tweets_list, labels = read_file(filepath, CLASS_TO_IND)
