@@ -29,7 +29,7 @@ _python ./train.py electra_trained.th xlnet --B=8 --lr=0.00001 --epochs=2_
 | ----------------- | :-----------------: |
 ELECTRA (base) encoder + classification head | 93.3 |
 BERT (base-uncased) encoder + classification head | 92.4 |
-RoBERTta (base) encoder + classification head | - |
+RoBERTta (base) encoder + classification head | 92.6 |
 
 ### Training Details
 
