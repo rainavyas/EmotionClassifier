@@ -29,7 +29,7 @@ def read_file(filepath, CLASS_TO_IND):
     for line in lines:
         items = line.split(';')
         try:
-            label = CLASS_TO_IND(items[1])
+            label = CLASS_TO_IND[items[1]]
             class_labels.append(label)
             tweets.append(items[0])
         except:
