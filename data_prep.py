@@ -12,7 +12,7 @@ _DESCRIPTION = """\
 Twitter Emotions Dataset
 This dataset consists of train (16000), val (2000) and test (2000), where each 
 data point is a short tweet. Each tweet is classed into one of 
-eight emotions: anger, anticipation, disgust, fear, joy, sadness, surprise, and trust\
+siz emotions: love, joy, fear, anger, surprise, sadness\
 """
 
 _DOWNLOAD_URL = "https://www.kaggle.com/praveengovi/emotions-dataset-for-nlp?select=train.txt"
@@ -47,15 +47,12 @@ def get_data(filepath, arch):
         raise Exception('Invalid architecture, only allowed: electra, bert, roberta')
     
     CLASS_TO_IND = {
-        'anger': 0,
-        'anticipation': 1,
-        'disgust': 2,
-        'fear': 3,
-        'joy': 4,
+        'love': 0,
+        'joy': 1,
+        'fear': 2,
+        'anger': 3,
+        'surprise': 4,
         'sadness': 5,
-        'surprise': 6,
-        'trust': 7,
-        'love': 8
     }
 
     tweets_list, labels = read_file(filepath, CLASS_TO_IND)
