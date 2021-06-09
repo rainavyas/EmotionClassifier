@@ -158,6 +158,10 @@ if __name__ == "__main__":
 
         # evaluate on validation set
         eval(val_dl, model, criterion, device)
+    
+    # evaluate on test set
+    print("Test set\n")
+    eval(test_dl, model, criterion, device)
 
     # Save the trained model
     state = model.state_dict()
