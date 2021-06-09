@@ -28,7 +28,7 @@ _python ./train.py electra_trained.th xlnet --B=8 --lr=0.00001 --epochs=2_
 | Model Architecture | Test Accuracy (%) |
 | ----------------- | :-----------------: |
 ELECTRA (base) encoder + classification head | - |
-BERT (base-uncased) encoder + classification head | - |
+BERT (base-uncased) encoder + classification head | 92.4 |
 RoBERTta (base) encoder + classification head | - |
 
 ### Training Details
